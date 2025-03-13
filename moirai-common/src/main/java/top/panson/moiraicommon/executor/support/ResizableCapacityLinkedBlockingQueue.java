@@ -62,11 +62,28 @@ public class ResizableCapacityLinkedBlockingQueue<E> extends AbstractQueue<E>
 
     /**
      * The capacity bound, or Integer.MAX_VALUE if none
+     * 队列的最大容量（可以动态更新）
      */
     private int capacity;
 
     /**
      * Current number of elements
+     * 1. 作用：
+     *     count是一个原子整型变量，用于实时跟踪队列中的元素数量
+     *     它保证了在多线程环境下对队列大小的操作是线程安全的
+     * 2. 实现细节：
+     *     使用AtomicInteger类型，提供了原子性的增减操作
+     *     初始值为0，表示队列初始为空
+     *     使用final修饰符，表示该引用不可变
+     * 3. 使用场景：
+     *     在put()、offer()等入队操作中，通过getAndIncrement()增加计数
+     *     在take()、poll()等出队操作中，通过getAndDecrement()减少计数
+     *     在size()方法中，直接返回当前计数值
+     *     在判断队列是否满或空时使用
+     * 4. 并发控制：
+     *     所有对count的修改都是原子操作，保证了线程安全
+     *     与putLock和takeLock配合使用，确保队列操作的完整性
+     *     这个字段是队列实现的核心部分之一，它准确记录了队列的当前大小，支持了队列的容量控制和状态判断。
      */
     private final AtomicInteger count = new AtomicInteger(0);
 
