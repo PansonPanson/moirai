@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
+import top.panson.moiraicore.constant.Constants;
+import top.panson.moiraicore.http.HttpAgent;
 import top.panson.moiraicore.util.JSONUtil;
 import top.panson.moiraicore.util.ReflectUtil;
 
@@ -16,7 +18,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import static top.panson.moiraicore.Constants.*;
+import static top.panson.moiraicore.constant.Constants.*;
 
 
 @Slf4j

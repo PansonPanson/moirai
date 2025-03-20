@@ -15,9 +15,11 @@
  * limitations under the License.
  */
 
-package top.panson.moiraicore;
+package top.panson.moiraicore.http;
 
 
+
+import top.panson.moiraicore.Result;
 
 import java.util.Map;
 

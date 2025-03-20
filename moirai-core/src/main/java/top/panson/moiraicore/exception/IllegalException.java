@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package top.panson.moiraicore;
+package top.panson.moiraicore.exception;
 
 /**
  * A generic exception to handle illegal operations
