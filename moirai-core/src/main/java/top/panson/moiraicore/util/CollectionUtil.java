@@ -1,4 +1,4 @@
-package top.panson.moiraicore;
+package top.panson.moiraicore.util;
 
 import java.util.*;
 import java.util.stream.Collectors;

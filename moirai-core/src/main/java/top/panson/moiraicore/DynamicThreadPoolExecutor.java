@@ -25,6 +25,7 @@ import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.core.task.TaskDecorator;
+import top.panson.moiraicore.util.CollectionUtil;
 
 import java.util.Objects;
 import java.util.concurrent.BlockingQueue;

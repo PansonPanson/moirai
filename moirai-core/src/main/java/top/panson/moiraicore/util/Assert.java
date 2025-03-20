@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package top.panson.moiraicore;
+package top.panson.moiraicore.util;
 
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;

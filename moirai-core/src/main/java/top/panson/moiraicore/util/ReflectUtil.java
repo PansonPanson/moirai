@@ -1,8 +1,9 @@
-package top.panson.moiraicore;
+package top.panson.moiraicore.util;
 
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
+import top.panson.moiraicore.IllegalException;
 
 import java.lang.reflect.AccessibleObject;
 import java.lang.reflect.Field;

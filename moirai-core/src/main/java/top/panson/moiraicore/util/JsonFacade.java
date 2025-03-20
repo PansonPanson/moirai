@@ -1,4 +1,4 @@
-package top.panson.moiraicore;
+package top.panson.moiraicore.util;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 

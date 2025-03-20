@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package top.panson.moiraicore;
+package top.panson.moiraicore.util;
 
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;

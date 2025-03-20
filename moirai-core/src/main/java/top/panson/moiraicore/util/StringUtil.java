@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package top.panson.moiraicore;
+package top.panson.moiraicore.util;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

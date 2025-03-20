@@ -1,4 +1,4 @@
-package top.panson.moiraicore;
+package top.panson.moiraicore.util;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonGenerator;
