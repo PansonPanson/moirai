@@ -1,4 +1,4 @@
-package top.panson.moiraicore.http;
+package top.panson.moiraicore.util.net;
 
 
 import lombok.AccessLevel;
@@ -21,7 +21,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.Map;
 import java.util.Optional;
-import top.panson.moiraicore.constant.HttpHeaderConstants.*;
+
 import top.panson.moiraicore.util.IoUtil;
 
 

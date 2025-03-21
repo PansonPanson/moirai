@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import top.panson.moiraicore.constant.Constants;
-import top.panson.moiraicore.http.HttpAgent;
+import top.panson.moiraicore.util.net.HttpAgent;
 import top.panson.moiraicore.util.JSONUtil;
 import top.panson.moiraicore.util.ReflectUtil;
 

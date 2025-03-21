@@ -1,4 +1,4 @@
-package top.panson.moiraicore.http;
+package top.panson.moiraicore.util.net;
 
 
 import lombok.extern.slf4j.Slf4j;

@@ -1,4 +1,4 @@
-package top.panson.moiraicore.http;
+package top.panson.moiraicore.util.net;
 
 import java.io.Closeable;
 import java.io.InputStream;
