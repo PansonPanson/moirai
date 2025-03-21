@@ -1,0 +1,59 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package top.panson.console.controller;
+
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import top.panson.auth.model.biz.permission.PermissionRespDTO;
+import top.panson.auth.service.PermissionService;
+import top.panson.common.web.base.Result;
+import top.panson.common.web.base.Results;
+import lombok.AllArgsConstructor;
+import org.springframework.web.bind.annotation.*;
+
+/**
+ * @author:B站UP主陈清风扬，从零带你写框架系列教程的作者，个人微信号：chenqingfengyangjj。
+ * @Description:系列教程目前包括手写Netty，XXL-JOB，Spring，RocketMq，Javac，JVM等课程。
+ * @Date:2024/4/29
+ * @Description:权限控制器
+ */
+@RestController
+@AllArgsConstructor
+@RequestMapping("/v1/auth/permissions")
+public class PermissionController {
+
+    private final PermissionService permissionService;
+
+    @GetMapping("/{pageNo}/{pageSize}")
+    public Result<IPage<PermissionRespDTO>> listPermission(@PathVariable("pageNo") int pageNo, @PathVariable("pageSize") int pageSize) {
+        IPage<PermissionRespDTO> resultPermissionPage = permissionService.listPermission(pageNo, pageSize);
+        return Results.success(resultPermissionPage);
+    }
+
+    @PostMapping("/{role}/{resource}/{action}")
+    public Result<Void> addPermission(@PathVariable("role") String role, @PathVariable("resource") String resource, @PathVariable("action") String action) {
+        permissionService.addPermission(role, resource, action);
+        return Results.success();
+    }
+
+    @DeleteMapping("/{role}/{resource}/{action}")
+    public Result<Void> deleteUser(@PathVariable("role") String role, @PathVariable("resource") String resource, @PathVariable("action") String action) {
+        permissionService.deletePermission(role, resource, action);
+        return Results.success();
+    }
+}
+

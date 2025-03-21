@@ -1,0 +1,113 @@
+{
+  "groups": [
+    {
+      "name": "spring.dynamic.thread-pool",
+      "type": "top.panson.springboot.start.config.BootstrapProperties",
+      "sourceType": "top.panson.springboot.start.config.BootstrapProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.dynamic.thread-pool.banner",
+      "type": "java.lang.Boolean",
+      "description": "dynamic thread-pool banner.",
+      "sourceType": "top.panson.springboot.start.config.BootstrapProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.dynamic.thread-pool.enable",
+      "type": "java.lang.Boolean",
+      "sourceType": "top.panson.springboot.start.config.BootstrapProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.dynamic.thread-pool.item-id",
+      "type": "java.lang.String",
+      "description": "dynamic thread-pool item-id.",
+      "sourceType": "top.panson.springboot.start.config.BootstrapProperties"
+    },
+    {
+      "name": "spring.dynamic.thread-pool.monitor",
+      "type": "top.panson.springboot.start.config.MonitorProperties",
+      "sourceType": "top.panson.springboot.start.config.BootstrapProperties"
+    },
+    {
+      "name": "spring.dynamic.thread-pool.namespace",
+      "type": "java.lang.String",
+      "description": "dynamic thread-pool namespace.",
+      "sourceType": "top.panson.springboot.start.config.BootstrapProperties",
+      "defaultValue": "public"
+    },
+    {
+      "name": "spring.dynamic.thread-pool.netty-server-port",
+      "type": "java.lang.String",
+      "description": "dynamic thread-pool server netty port.",
+      "sourceType": "top.panson.springboot.start.config.BootstrapProperties",
+      "defaultValue": "8899"
+    },
+    {
+      "name": "spring.dynamic.thread-pool.password",
+      "type": "java.lang.String",
+      "sourceType": "top.panson.springboot.start.config.BootstrapProperties"
+    },
+    {
+      "name": "spring.dynamic.thread-pool.report-type",
+      "type": "java.lang.String",
+      "description": "dynamic thread-pool report-type.",
+      "sourceType": "top.panson.springboot.start.config.BootstrapProperties",
+      "defaultValue": "http"
+    },
+    {
+      "name": "spring.dynamic.thread-pool.server-addr",
+      "type": "java.lang.String",
+      "description": "dynamic thread-pool server address.",
+      "sourceType": "top.panson.springboot.start.config.BootstrapProperties",
+      "defaultValue": "localhost:6691"
+    },
+    {
+      "name": "spring.dynamic.thread-pool.username",
+      "type": "java.lang.String",
+      "sourceType": "top.panson.springboot.start.config.BootstrapProperties"
+    },
+    {
+      "name": "spring.dynamic.thread-pool.collect",
+      "type": "java.lang.Boolean",
+      "sourceType": "top.panson.springboot.start.config.BootstrapProperties",
+      "defaultValue": true,
+      "deprecated": true,
+      "deprecation": {}
+    },
+    {
+      "name": "spring.dynamic.thread-pool.collect-interval",
+      "type": "java.lang.Long",
+      "sourceType": "top.panson.springboot.start.config.BootstrapProperties",
+      "defaultValue": 5000,
+      "deprecated": true,
+      "deprecation": {}
+    },
+    {
+      "name": "spring.dynamic.thread-pool.collect-type",
+      "type": "java.lang.String",
+      "sourceType": "top.panson.springboot.start.config.BootstrapProperties",
+      "deprecated": true,
+      "deprecation": {}
+    },
+    {
+      "name": "spring.dynamic.thread-pool.initial-delay",
+      "type": "java.lang.Long",
+      "sourceType": "top.panson.springboot.start.config.BootstrapProperties",
+      "defaultValue": 10000,
+      "deprecated": true,
+      "deprecation": {}
+    },
+    {
+      "name": "spring.dynamic.thread-pool.task-buffer-size",
+      "type": "java.lang.Integer",
+      "sourceType": "top.panson.springboot.start.config.BootstrapProperties",
+      "defaultValue": 4096,
+      "deprecated": true,
+      "deprecation": {}
+    }
+  ],
+  "hints": []
+}
