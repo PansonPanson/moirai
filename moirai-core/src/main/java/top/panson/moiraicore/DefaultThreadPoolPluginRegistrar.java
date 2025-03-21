@@ -2,7 +2,7 @@ package top.panson.moiraicore;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-
+import top.panson.moiraicore.plugin.*;
 
 
 @NoArgsConstructor

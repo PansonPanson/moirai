@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
+import top.panson.moiraicore.plugin.*;
 
 import java.util.Collection;
 import java.util.Collections;

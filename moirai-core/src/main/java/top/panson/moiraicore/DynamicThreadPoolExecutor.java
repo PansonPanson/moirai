@@ -25,6 +25,10 @@ import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.core.task.TaskDecorator;
+import top.panson.moiraicore.plugin.TaskDecoratorPlugin;
+import top.panson.moiraicore.plugin.TaskRejectCountRecordPlugin;
+import top.panson.moiraicore.plugin.TaskTimeoutNotifyAlarmPlugin;
+import top.panson.moiraicore.plugin.ThreadPoolExecutorShutdownPlugin;
 import top.panson.moiraicore.util.CollectionUtil;
 
 import java.util.Objects;

@@ -4,7 +4,7 @@ package top.panson.moiraicore.util.net;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.StringUtils;
-import top.panson.moiraicore.BootstrapProperties;
+import top.panson.moiraicore.model.BootstrapProperties;
 import top.panson.moiraicore.util.StringUtil;
 
 import java.util.*;

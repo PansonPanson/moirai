@@ -19,9 +19,9 @@ package top.panson.moiraicore.util.net;
 
 
 
-import top.panson.moiraicore.BootstrapProperties;
-import top.panson.moiraicore.Result;
-import top.panson.moiraicore.ThreadFactoryBuilder;
+import top.panson.moiraicore.model.BootstrapProperties;
+import top.panson.moiraicore.model.Result;
+import top.panson.moiraicore.builder.ThreadFactoryBuilder;
 import top.panson.moiraicore.constant.Constants;
 import top.panson.moiraicore.util.StringUtil;
 

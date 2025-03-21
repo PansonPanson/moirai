@@ -19,7 +19,7 @@ package top.panson.moiraicore.util.net;
 
 
 
-import top.panson.moiraicore.Result;
+import top.panson.moiraicore.model.Result;
 
 import java.util.Map;
 

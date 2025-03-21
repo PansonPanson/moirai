@@ -19,6 +19,7 @@ package top.panson.moiraicore;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
+import top.panson.moiraicore.plugin.*;
 
 import java.util.Collection;
 import java.util.Collections;

@@ -1,6 +1,8 @@
 package top.panson.moiraicore;
 
 
+import top.panson.moiraicore.model.ThreadPoolParameter;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;

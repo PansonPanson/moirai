@@ -2,9 +2,9 @@ package top.panson.moiraicore.util.net;
 
 
 import lombok.extern.slf4j.Slf4j;
-import top.panson.moiraicore.BootstrapProperties;
-import top.panson.moiraicore.Result;
-import top.panson.moiraicore.TokenInfo;
+import top.panson.moiraicore.model.BootstrapProperties;
+import top.panson.moiraicore.model.Result;
+import top.panson.moiraicore.model.TokenInfo;
 import top.panson.moiraicore.constant.Constants;
 import top.panson.moiraicore.util.JSONUtil;
 import top.panson.moiraicore.util.StringUtil;
