@@ -40,9 +40,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/9
  * @方法描述：tomcat线程池处理器，这个处理器主要负责收集tomcat线程池的信息，以及动态刷新tomcat线程池的配置信息
  */
 @Slf4j
@@ -60,9 +57,6 @@ public class TomcatWebThreadPoolHandler extends AbstractWebThreadPoolService {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/9
      * @方法描述：得到tomcat线程池的方法
      */
     @Override
@@ -163,9 +157,6 @@ public class TomcatWebThreadPoolHandler extends AbstractWebThreadPoolService {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/9
      * @方法描述：更新tomcat线程池配置信息的方法
      */
     @Override

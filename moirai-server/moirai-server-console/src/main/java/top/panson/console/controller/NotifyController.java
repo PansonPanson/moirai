@@ -32,9 +32,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/9
  * @方法描述：处理web界面通知报警页面请求的处理器
  */
 @RestController

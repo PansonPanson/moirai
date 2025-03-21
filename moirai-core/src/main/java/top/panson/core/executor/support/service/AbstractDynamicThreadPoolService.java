@@ -11,9 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/4/27
+ *
  * @方法描述：源码中这个类中有一个严重的bug，会导致程序无法运行，但现在没必要改了，而且也不应该在这里改，我修改后的程序用不到这个类的方法了，所以就这么着吧
  */
 public abstract class AbstractDynamicThreadPoolService implements DynamicThreadPoolService {

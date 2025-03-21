@@ -38,9 +38,6 @@ import static top.panson.common.constant.Constants.BASE_PATH;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/10
  * @方法描述：这个类就是用来构建客户端线程池的通知告警配置信息的，这些信息要从服务器获取
  */
 @Slf4j
@@ -72,9 +69,6 @@ public class ServerNotifyConfigBuilder implements NotifyConfigBuilder {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/10
      * @方法描述：访问服务端，获得线程池对应的告警通知配置信息
      */
     public Map<String, List<NotifyConfigDTO>> getAndInitNotify(List<String> threadPoolIds) {

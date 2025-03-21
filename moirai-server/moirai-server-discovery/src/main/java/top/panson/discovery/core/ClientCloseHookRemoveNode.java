@@ -26,9 +26,6 @@ import org.springframework.stereotype.Component;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/6
  * @方法描述：这个类中定义了客户端关闭时要执行的钩子方法，这个钩子方法执行的是清除InstanceRegistry中服务实例缓存信息的操作
  */
 @Slf4j

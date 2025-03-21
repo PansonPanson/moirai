@@ -27,9 +27,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/4/28
+ *
  * @方法描述：拒绝任务的时候执行通知告警操作的插件
  */
 public class TaskRejectNotifyAlarmPlugin implements RejectedAwarePlugin {
@@ -48,9 +46,6 @@ public class TaskRejectNotifyAlarmPlugin implements RejectedAwarePlugin {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/9
      * @方法描述：任务被拒绝时直接发送用户告警消息
      */
     @Override

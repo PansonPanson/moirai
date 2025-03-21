@@ -11,9 +11,7 @@ import org.springframework.boot.ansi.AnsiStyle;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/4/26
+ *
  * @方法描述：该类的作用就是在程序启动时，在控制台打印hippo4j框架的启动图案的
  */
 @Slf4j

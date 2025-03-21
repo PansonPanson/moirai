@@ -31,9 +31,6 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * @author:B站UP主陈清风扬，从零带你写框架系列教程的作者，个人微信号：chenqingfengyangjj。
- * @Description:系列教程目前包括手写Netty，XXL-JOB，Spring，RocketMq，Javac，JVM等课程。
- * @Date:2024/4/29
  * @Description:这个类处理web界面查询tenant信息的请求，这里我把这个类引入进来，也是因为web界面的条件查询的请求必须要处理
  * 否则没办法从服务端获取存储到数据库的线程池信息
  */

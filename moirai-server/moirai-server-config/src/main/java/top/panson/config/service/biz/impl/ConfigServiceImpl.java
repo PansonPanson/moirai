@@ -33,9 +33,7 @@ import java.util.stream.Stream;
 import static top.panson.config.service.ConfigCacheService.getContent;
 
 /**
- * @author:B站UP主陈清风扬，从零带你写框架系列教程的作者，个人微信号：chenqingfengyangjj。
- * @Description:系列教程目前包括手写Netty，XXL-JOB，Spring，RocketMq，Javac，JVM等课程。
- * @Date:2024/4/29
+ *
  * @Description:从数据库中查询线程池配置信息的类
  */
 @Slf4j
@@ -141,9 +139,7 @@ public class ConfigServiceImpl implements ConfigService {
 
 
     /**
-     * @author:B站UP主陈清风扬，从零带你写框架系列教程的作者，个人微信号：chenqingfengyangjj。
-     * @Description:系列教程目前包括手写Netty，XXL-JOB，Spring，RocketMq，Javac，JVM等课程。
-     * @Date:2024/4/29
+     *
      * @Description:注册线程池信息到数据库的方法，DynamicThreadPoolRegisterWrapper就是从客户端传过来的对象
      */
     @Override
@@ -219,9 +215,7 @@ public class ConfigServiceImpl implements ConfigService {
 
 
     /**
-     * @author:B站UP主陈清风扬，从零带你写框架系列教程的作者，个人微信号：chenqingfengyangjj。
-     * @Description:系列教程目前包括手写Netty，XXL-JOB，Spring，RocketMq，Javac，JVM等课程。
-     * @Date:2024/4/29
+     *
      * @Description:添加ConfigAllInfo到数据库的方法
      */
     public Long addConfigInfo(ConfigAllInfo config) {
@@ -247,9 +241,7 @@ public class ConfigServiceImpl implements ConfigService {
     }
 
     /**
-     * @author:B站UP主陈清风扬，从零带你写框架系列教程的作者，个人微信号：chenqingfengyangjj。
-     * @Description:系列教程目前包括手写Netty，XXL-JOB，Spring，RocketMq，Javac，JVM等课程。
-     * @Date:2024/4/29
+     *
      * @Description:更新数据库中ConfigAllInfo的方法
      */
     public void updateConfigInfo(String identify, boolean isChangeNotice, ConfigAllInfo config) {

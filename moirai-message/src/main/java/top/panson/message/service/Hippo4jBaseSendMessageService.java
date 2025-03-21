@@ -36,9 +36,7 @@ import java.util.Map;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/10
+ *
  * @方法描述：提供了发送告警信息或者配置变更信息基础服务的类，这个类实现了CommandLineRunner接口
  */
 @Slf4j
@@ -59,9 +57,6 @@ public class Hippo4jBaseSendMessageService implements Hippo4jSendMessageService,
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/10
      * @方法描述：向用户发送告警通知的方法，方法的逻辑很简单，我就不添加注释了
      */
     @Override
@@ -95,9 +90,6 @@ public class Hippo4jBaseSendMessageService implements Hippo4jSendMessageService,
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/10
      * @方法描述：向用户发送配置变更通知的方法，方法的逻辑很简单，我就不添加注释了
      */
     @Override
@@ -148,9 +140,6 @@ public class Hippo4jBaseSendMessageService implements Hippo4jSendMessageService,
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/10
      * @方法描述：CommandLineRunner接口中的回调方法，这个接口回调的时候，会访问服务端，从服务端获取线程池对应的通知告警配置信息
      */
     @Override

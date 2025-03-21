@@ -50,9 +50,6 @@ import java.util.stream.Collectors;
 import static top.panson.common.toolkit.ContentUtil.getGroupKey;
 
 /**
- * @author:B站UP主陈清风扬，从零带你写框架系列教程的作者，个人微信号：chenqingfengyangjj。
- * @Description:系列教程目前包括手写Netty，XXL-JOB，Spring，RocketMq，Javac，JVM等课程。
- * @Date:2024/4/29
  * @Description:这个控制器就是第一版本最核心的一个控制器
  */
 @RestController

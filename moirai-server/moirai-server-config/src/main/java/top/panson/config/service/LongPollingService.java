@@ -43,9 +43,7 @@ import static top.panson.common.constant.Constants.GROUP_KEY_DELIMITER;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/7
+ *
  * @方法描述：提供处理长轮询请求的服务对象
  */
 @Slf4j
@@ -112,9 +110,7 @@ public class LongPollingService {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/7
+     *
      * @方法描述：服务端向客户端回复长轮询响应的任务，当服务端的事件通知中心发布了LocalDataChangeEvent事件，这个任务就会被订阅者调用
      */
     class DataChangeTask implements Runnable {
@@ -165,9 +161,7 @@ public class LongPollingService {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/7
+     *
      * @方法描述：添加长轮询请求到allSubs队列中的方法
      */
     public void addLongPollingClient(HttpServletRequest req, HttpServletResponse rsp, Map<String, String> clientMd5Map,
@@ -227,9 +221,7 @@ public class LongPollingService {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/8
+     *
      * @方法描述：这个内部类对象就是一个长轮询任务
      */
     class ClientLongPolling implements Runnable {

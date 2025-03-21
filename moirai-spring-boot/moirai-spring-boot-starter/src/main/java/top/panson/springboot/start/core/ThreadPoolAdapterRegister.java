@@ -45,9 +45,6 @@ import static top.panson.common.constant.Constants.REGISTER_ADAPTER_PATH;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/9
  * @方法描述：dubbo等第三方线程池信息注册器，这个注册器实现了ApplicationRunner接口，接口方法回调的时候
  * 会把dubbo这些第三方线程池的信息注册到服务端，这个类的代码非常简单，大家自己看看就行
  */

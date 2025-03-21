@@ -17,9 +17,6 @@ import java.util.concurrent.TimeUnit;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/4/26
  * @方法描述：安全代理类，这个类就是用来访问服务端，然后从服务端获取token的
  */
 @Slf4j
@@ -52,9 +49,6 @@ public class SecurityProxy {
     }
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/4/26
      * @方法描述：这个方法会被提交给ServerHttpAgent类中的定时任务执行器，当作一个定时任务来执行
      */
     public boolean applyToken(List<String> servers) {
@@ -77,9 +71,6 @@ public class SecurityProxy {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/4/26
      * @方法描述：这个方法就是用来访问服务端，并且获得token的方法
      */
     public boolean applyToken(String server) {

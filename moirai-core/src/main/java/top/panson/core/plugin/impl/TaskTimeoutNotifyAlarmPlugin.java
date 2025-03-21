@@ -29,9 +29,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/4/28
+ *
  * @方法描述：这个插件就是用来判断线程中的任务执行是否超时了，如果超时了就调用processTaskTime方法执行告警操作
  */
 @AllArgsConstructor
@@ -67,10 +65,6 @@ public class TaskTimeoutNotifyAlarmPlugin extends AbstractTaskTimerPlugin {
     }
 
     /**
-     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/9
      * @方法描述：线程池执行任务超时，要发送告警消息给用户。
      */
     @Override

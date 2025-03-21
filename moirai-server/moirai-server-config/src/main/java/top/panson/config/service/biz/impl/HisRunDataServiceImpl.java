@@ -34,9 +34,7 @@ import static top.panson.common.toolkit.DateUtil.NORM_TIME_PATTERN;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/8
+ *
  * @方法描述：服务端处理客户端上报的线程池运行时信息的对象
  */
 @Service
@@ -54,9 +52,7 @@ public class HisRunDataServiceImpl extends ServiceImpl<HisRunDataMapper, HisRunD
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/8
+     *
      * @方法描述：查询对应的线程池历史运行信息的方法
      */
     @Override
@@ -80,9 +76,7 @@ public class HisRunDataServiceImpl extends ServiceImpl<HisRunDataMapper, HisRunD
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/8
+     *
      * @方法描述：这个方法我就不添加注释了，看着很长，但是逻辑非常简单，而且前端界面把要获得数据写得很清楚，大家自己简单看看就行
      */
     @Override
@@ -136,9 +130,7 @@ public class HisRunDataServiceImpl extends ServiceImpl<HisRunDataMapper, HisRunD
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/8
+     *
      * @方法描述：得到线程池最新的运行时信息，当然，这个最新也是相对的，肯定是相对于当前时间最新的运行信息
      */
     @Override
@@ -168,9 +160,7 @@ public class HisRunDataServiceImpl extends ServiceImpl<HisRunDataMapper, HisRunD
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/8
+     *
      * @方法描述：是把客户端上报的线程池运行时信息存储到数据库中的方法
      */
     @Override
@@ -203,9 +193,6 @@ public class HisRunDataServiceImpl extends ServiceImpl<HisRunDataMapper, HisRunD
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/8
      * @方法描述：解析客户端上报的线程池运行时数据的方法，在第六版本中，数据解析器会把线程池运行时数据存放到数据库中
      */
     @Override

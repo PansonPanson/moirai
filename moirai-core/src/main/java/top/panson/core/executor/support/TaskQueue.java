@@ -9,9 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/4/27
+ *
  * @方法描述：这个是快速线程池专属的任务队列
  */
 public class TaskQueue<R extends Runnable> extends LinkedBlockingQueue<Runnable> {
@@ -27,9 +25,7 @@ public class TaskQueue<R extends Runnable> extends LinkedBlockingQueue<Runnable>
     }
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/4/27
+     *
      * @方法描述：向任务队列中添加任务的方法，这个方法的逻辑要结合jdk的ThreadPoolExecutor类的execute方法来理解
      */
     @Override

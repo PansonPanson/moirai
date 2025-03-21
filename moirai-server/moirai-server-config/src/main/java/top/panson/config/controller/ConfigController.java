@@ -38,9 +38,7 @@ import java.net.URLDecoder;
 import java.util.Map;
 
 /**
- * @author:B站UP主陈清风扬，从零带你写框架系列教程的作者，个人微信号：chenqingfengyangjj。
- * @Description:系列教程目前包括手写Netty，XXL-JOB，Spring，RocketMq，Javac，JVM等课程。
- * @Date:2024/4/29
+ *
  * @Description:处理线程池配置信息的控制器，这个控制器引入进来是因为当客户端创建动态线程池的时候
  * 会先访问一次服务端，看看服务端的数据库中是否存在线程池的配置信息，如果存在就使用数据库中的信息
  * 刷新客户端动态线程池

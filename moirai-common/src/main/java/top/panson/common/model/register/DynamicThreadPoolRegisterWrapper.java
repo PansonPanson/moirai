@@ -9,9 +9,6 @@ import lombok.NoArgsConstructor;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/4/26
  * @方法描述：这个动态线程池的包装注册器对象，这个对象中封装了动态线程池中要注册到服务端的重要信息
  */
 @Data

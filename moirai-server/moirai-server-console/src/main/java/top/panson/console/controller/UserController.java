@@ -36,9 +36,6 @@ import java.util.List;
 import static top.panson.auth.constant.Constants.TOKEN_VALIDITY_IN_SECONDS;
 
 /**
- * @author:B站UP主陈清风扬，从零带你写框架系列教程的作者，个人微信号：chenqingfengyangjj。
- * @Description:系列教程目前包括手写Netty，XXL-JOB，Spring，RocketMq，Javac，JVM等课程。
- * @Date:2024/4/29
  * @Description:处理和用户操作相关的控制器
  */
 @RestController

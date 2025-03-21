@@ -40,9 +40,6 @@ import static top.panson.common.constant.Constants.BASE_PATH;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/6
  * @方法描述：服务发现客户端，这个客户端会把客户端封装成一个服务实例对象注册到服务端
  */
 @Slf4j
@@ -90,9 +87,6 @@ public class DiscoveryClient implements DisposableBean {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/6
      * @方法描述：把服务实例注册到服务端的方法
      */
     boolean register() {
@@ -115,9 +109,6 @@ public class DiscoveryClient implements DisposableBean {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/6
      * @方法描述：当客户端要关闭时会执行这个方法
      */
     @Override
@@ -170,9 +161,6 @@ public class DiscoveryClient implements DisposableBean {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/6
      * @方法描述：服务实例向服务端续约的方法
      */
     private boolean renew() {

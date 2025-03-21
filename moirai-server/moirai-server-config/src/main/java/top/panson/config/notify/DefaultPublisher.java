@@ -31,9 +31,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/7
+ *
  * @方法描述：默认的事件发布器，在这个框架中，整个事件通知机制都是复制了nacos的那一套，代码也都几乎一样，其实作者没必要这么搞
  * 应该就是不想自己写了，单纯省事，所以直接把nacos的那一套搬过来了，但是在整个框架中，这个事件通知机制也就长轮询用到了，未免有点小题大做
  */
@@ -154,9 +152,6 @@ public class DefaultPublisher extends Thread implements EventPublisher {
     }
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/8
      * @方法描述：本类核心方法，通知订阅者执行回调方法
      */
     @Override

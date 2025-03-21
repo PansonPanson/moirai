@@ -30,9 +30,6 @@ import static top.panson.core.executor.manage.GlobalThreadPoolManage.getThreadPo
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/8
  * @方法描述：动态线程池运行信息收集器
  */
 @Slf4j
@@ -76,9 +73,6 @@ public class ReportingEventExecutor implements Runnable, CommandLineRunner, Disp
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/8
      * @方法描述：这个就是ReportingEventExecutor这个任务要执行得操作
      */
     @SneakyThrows
@@ -97,9 +91,6 @@ public class ReportingEventExecutor implements Runnable, CommandLineRunner, Disp
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/8
      * @方法描述：这个是springboot一个扩展接口中的方法，就是CommandLineRunner接口中的方法
      */
     @Override
@@ -150,9 +141,6 @@ public class ReportingEventExecutor implements Runnable, CommandLineRunner, Disp
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/8
      * @方法描述：收集动态线程池运行信息的方法
      */
     private void runTimeGatherTask() {

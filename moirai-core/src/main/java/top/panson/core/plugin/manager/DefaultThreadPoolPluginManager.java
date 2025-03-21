@@ -34,9 +34,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/4/28
+ *
  * @方法描述：线程池的默认插件管理器，和线程池有关的所有插件都会注册到这个插件管理器中，每一个线程池都持有一个插件管理器对象
  * 这个类的逻辑非常简单，就是向集合中添加数据移除数据的操作，大家自己看看就成
  */

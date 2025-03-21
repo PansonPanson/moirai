@@ -37,9 +37,6 @@ import static top.panson.common.constant.Constants.HEALTH_CHECK_INTERVAL;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/6
  * @方法描述：健康检查抽象类
  */
 @Slf4j
@@ -73,9 +70,6 @@ public abstract class AbstractHealthCheck implements ServerHealthCheck, Initiali
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/6
      * @方法描述：向服务端发送健康检查请求的抽象方法，由子类实现
      */
     protected abstract boolean sendHealthCheck();
@@ -83,9 +77,6 @@ public abstract class AbstractHealthCheck implements ServerHealthCheck, Initiali
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/6
      * @方法描述：执行健康检查的入口方法
      */
     public void healthCheck() {
@@ -120,9 +111,6 @@ public abstract class AbstractHealthCheck implements ServerHealthCheck, Initiali
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/6
      * @方法描述：判断服务端是否健康的方法
      */
     @Override
@@ -180,9 +168,6 @@ public abstract class AbstractHealthCheck implements ServerHealthCheck, Initiali
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/6
      * @方法描述：这个方法是InitializingBean接口中的扩展方法，该方法会在当前类的bean对象初始化完毕之后调用
      */
     @Override

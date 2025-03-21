@@ -49,9 +49,6 @@ import org.springframework.core.env.ConfigurableEnvironment;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/4/26
  * @方法描述：这个就是spring-starter中的核心类，这个类使用了大量springboot的功能，这个类上的springboot注解应该都是常用注解了，所以这些功能我就不写注释了
  */
 @Configuration

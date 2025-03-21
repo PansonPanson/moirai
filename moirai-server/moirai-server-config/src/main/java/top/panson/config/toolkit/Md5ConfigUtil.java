@@ -36,9 +36,7 @@ import static top.panson.common.constant.Constants.LINE_SEPARATOR;
 import static top.panson.common.constant.Constants.WORD_SEPARATOR;
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/8
+ *
  * @方法描述：md5工具类
  */
 public class Md5ConfigUtil {
@@ -60,9 +58,6 @@ public class Md5ConfigUtil {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/8
      * @方法描述：对比客户端线程池和服务端线程池的md5异同的方法
      */
     public static List<String> compareMd5(HttpServletRequest request, Map<String, String> clientMd5Map) {

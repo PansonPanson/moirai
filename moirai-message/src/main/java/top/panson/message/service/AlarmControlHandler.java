@@ -31,9 +31,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/10
+ *
  * @方法描述：告警控制器，就是在程序想要发送告警信息的时候，判断一下，是否符合发送频率，不能发送太频繁了，如果符合发送频率，那就给用户发送信息
  */
 public class AlarmControlHandler {
@@ -43,10 +41,8 @@ public class AlarmControlHandler {
     private final Map<String, Cache<String, String>> threadPoolAlarmCache = new ConcurrentHashMap<>();
 
     
-    /** 
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。 
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/10
+    /**
+     *
      * @方法描述：是否可以发送告警信息的方法
      */ 
     public boolean isSendAlarm(AlarmControlDTO alarmControl) {
@@ -81,10 +77,8 @@ public class AlarmControlHandler {
 
     
     
-    /** 
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。 
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/10
+    /**
+     *
      * @方法描述：在这里把从服务端收集到的线程池对应的告警信息缓存在了threadPoolAlarmCache中
      */ 
     public void initCacheAndLock(String threadPoolId, String platform, Integer interval) {

@@ -22,9 +22,6 @@ import static top.panson.common.constant.Constants.*;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/7
  * @方法描述：客户端长轮询对象，在这个对象中，开启了定时任务，定时任务会定期向服务端发送长轮询请求，监听服务端的动态线程池配置信息是否有更新
  * 如果更新了客户端就会及时感知到，然后使用服务端的配置信息更新本地线程池。这里我要多说一句，这个框架的长轮询功能其实就是复制了nacos旧版长轮询的代码
  * 代码几乎一模一样，当然，hippo4j的长轮询代码量要少一点。这一点在客户端和服务端的长轮询组件中都很明显。
@@ -89,9 +86,6 @@ public class ClientWorker {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/7
      * @方法描述：这个内部类的对象就是长轮询任务对象
      */
     class LongPollingRunnable implements Runnable {
@@ -169,9 +163,6 @@ public class ClientWorker {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/7
      * @方法描述：检查线程池信息是否在服务端更新了的入口方法
      */
     private List<String> checkUpdateDataIds(List<CacheData> cacheDataList, List<String> inInitializingCacheList) {
@@ -202,9 +193,6 @@ public class ClientWorker {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/7
      * @方法描述：检查线程池信息是否在服务端更新了的方法，在这个方法中，客户端向服务端发送了长轮询请求
      */
     public List<String> checkUpdateTpIds(String probeUpdateString, boolean isInitializingCacheList) {
@@ -265,9 +253,6 @@ public class ClientWorker {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/7
      * @方法描述：解析服务端响应的方法
      */
     public List<String> parseUpdateDataIdResponse(String response) {
@@ -305,9 +290,6 @@ public class ClientWorker {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/7
      * @方法描述：为对应的线程池添加监听器的方法
      */
     public void addTenantListeners(String namespace, String itemId, String threadPoolId, List<? extends Listener> listeners) {
@@ -327,9 +309,6 @@ public class ClientWorker {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/7
      * @方法描述：为要监听的线程池创建对应的CacheData对象的方法
      */
     public CacheData addCacheDataIfAbsent(String namespace, String itemId, String threadPoolId) {

@@ -27,9 +27,7 @@ import java.util.Optional;
 import java.util.concurrent.*;
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/4/27
+ *
  * @方法描述：线程池构建器
  */
 public class ThreadPoolBuilder implements Builder<ThreadPoolExecutor> {
@@ -104,9 +102,7 @@ public class ThreadPoolBuilder implements Builder<ThreadPoolExecutor> {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/4/27
+     *
      * @方法描述：剩下的都是非常简单的方法了，就不添加详细注释了
      */
     public ThreadPoolBuilder isFastPool(Boolean isFastPool) {
@@ -126,9 +122,7 @@ public class ThreadPoolBuilder implements Builder<ThreadPoolExecutor> {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/4/27
+     *
      * @方法描述：这个方法需要强调一下，这里给线程池现成的前缀赋值了，后面会用到这个，在创建线程时会这个前缀进行判空操作，如果为空
      * 会操作失败
      */
@@ -427,9 +421,7 @@ public class ThreadPoolBuilder implements Builder<ThreadPoolExecutor> {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/4/27
+     *
      * @方法描述：创建ThreadPoolInitParam对象的方法，这个对象中封装了线程池的核心参数信息，然后会使用这个ThreadPoolInitParam对象去创建真正的线程池
      */
     private static AbstractBuildThreadPoolTemplate.ThreadPoolInitParam buildInitParam(ThreadPoolBuilder builder) {

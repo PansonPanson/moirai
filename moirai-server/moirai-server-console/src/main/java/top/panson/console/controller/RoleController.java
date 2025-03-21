@@ -28,9 +28,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * @author:B站UP主陈清风扬，从零带你写框架系列教程的作者，个人微信号：chenqingfengyangjj。
- * @Description:系列教程目前包括手写Netty，XXL-JOB，Spring，RocketMq，Javac，JVM等课程。
- * @Date:2024/4/29
+ *
  * @Description:角色控制器
  */
 @RestController

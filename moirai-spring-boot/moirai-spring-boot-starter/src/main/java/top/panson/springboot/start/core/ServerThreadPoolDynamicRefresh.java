@@ -25,9 +25,6 @@ import static top.panson.common.constant.ChangeThreadPoolConstants.CHANGE_DELIMI
 import static top.panson.common.constant.ChangeThreadPoolConstants.CHANGE_THREAD_POOL_TEXT;
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/7
  * @方法描述：线程池配置信息动态刷新器，这个动态刷新器在第三版本还不完善，因为在动态刷新本地线程池信息后，实际上还要通知用户
  * 但是在第三版本代码中，还没有实现通知用户的功能，后面会重构完整，主要是重构refreshDynamicPool方法
  */
@@ -53,9 +50,6 @@ public class ServerThreadPoolDynamicRefresh implements ThreadPoolDynamicRefresh 
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/7
      * @方法描述：动态刷新线程池信息的方法，这个方法在第三版本并不完善，我省略了很多代码，都是和通知用户线程池信息发生变更的操作
      * 后面会重构完整
      */
@@ -115,9 +109,6 @@ public class ServerThreadPoolDynamicRefresh implements ThreadPoolDynamicRefresh 
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/7
      * @方法描述：刷线客户端本地线程池信息的方法
      */
     private void changePoolInfo(ThreadPoolExecutor executor, ThreadPoolParameter parameter) {

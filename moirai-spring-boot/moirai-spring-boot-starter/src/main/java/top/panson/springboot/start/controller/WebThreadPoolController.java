@@ -30,9 +30,6 @@ import org.springframework.web.bind.annotation.*;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/9
  * @方法描述：这个控制器是专门用来和服务端的ThreadPoolController类发出的请求打交道的
  * 当用户需要在web界面得到web容器线程池的信息，服务端就会访问客户端，客户端使用当前端控制器对象收集web容器线程池信息
  * 然后返回给服务器，服务器再返回前端展示给用户

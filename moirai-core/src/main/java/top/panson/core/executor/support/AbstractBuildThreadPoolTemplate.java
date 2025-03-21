@@ -12,9 +12,7 @@ import java.util.concurrent.*;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/4/27
+ *
  * @方法描述：线程池模板类，框架中的线程池就是由这类创建的，不管是动态线程池还是快速线程池还是普通线程池，都是由这个类创建的
  */
 @Slf4j
@@ -33,9 +31,7 @@ public class AbstractBuildThreadPoolTemplate {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/4/27
+     *
      * @方法描述：创建普通线程池的方法
      */
     public static ThreadPoolExecutor buildPool(ThreadPoolInitParam initParam) {
@@ -66,9 +62,7 @@ public class AbstractBuildThreadPoolTemplate {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/4/27
+     *
      * @方法描述：创建快速线程池的方法
      */
     public static ThreadPoolExecutor buildFastPool(ThreadPoolInitParam initParam) {
@@ -94,9 +88,7 @@ public class AbstractBuildThreadPoolTemplate {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/4/27
+     *
      * @方法描述：创建动态线程池的方法
      */
     public static DynamicThreadPoolExecutor buildDynamicPool(ThreadPoolInitParam initParam) {
@@ -125,9 +117,7 @@ public class AbstractBuildThreadPoolTemplate {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/4/27
+     *
      * @方法描述：这个内部类的对象封装了线程池的核心参数，最后就是用它来创建线程池的
      */
     @Data

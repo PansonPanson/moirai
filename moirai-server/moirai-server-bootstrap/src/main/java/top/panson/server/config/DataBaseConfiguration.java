@@ -24,9 +24,6 @@ import org.springframework.context.annotation.Configuration;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/4/28
  * @方法描述：数据库配置信息对象
  */
 @Configuration

@@ -33,9 +33,7 @@ import static top.panson.example.core.constant.GlobalTestConstant.MESSAGE_CONSUM
 import static top.panson.example.core.constant.GlobalTestConstant.MESSAGE_PRODUCE;
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/4/27
+ *
  * @方法描述：在这个例子中创建了三个动态线程池对象交给spring容器了
  */
 @Slf4j

@@ -26,9 +26,6 @@ import javax.annotation.Resource;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/6
  * @方法描述：在这个类中，要想知道ApplicationRefreshedEvent事件的发布时机，首先应该知道ContextRefreshedEvent事件的发布时机
  * ContextRefreshedEvent在springboot中是一个容器刷新事件，也就是说当springboot容器的所有bean都被创建并且初始化完毕之后，这个事件就会被发布
  * 这个ContextRefreshedEvent事件是由springboot发布的，发布之后就会调用ApplicationContentPostProcessor这个监听器中的onApplicationEvent方法

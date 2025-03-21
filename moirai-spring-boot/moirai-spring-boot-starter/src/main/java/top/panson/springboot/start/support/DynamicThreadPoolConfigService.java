@@ -26,9 +26,6 @@ import static top.panson.common.constant.Constants.REGISTER_DYNAMIC_THREAD_POOL_
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/4/26
  * @方法描述：这个类的对象是客户端非常重要的一个组件，就是这个类的对象提供了把动态线程池信息注册到服务端的功能
  */
 @Slf4j
@@ -54,9 +51,6 @@ public class DynamicThreadPoolConfigService extends AbstractDynamicThreadPoolSer
     }
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/4/26
      * @方法描述：在该方法中把动态线程池的信息注册到服务端，注意，只要执行了注册方法，就意味着服务端之前是没有动态线程池信息的，也就意味着客户端本地的动态线程池的配置信息就是最新的
      * 源码中这个方法中有一个严重的bug，会导致程序无法正常运行，我给修正了一下
      */

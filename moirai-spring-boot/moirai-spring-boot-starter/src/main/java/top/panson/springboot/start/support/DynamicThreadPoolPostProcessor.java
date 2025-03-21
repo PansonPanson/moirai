@@ -40,9 +40,6 @@ import static top.panson.common.constant.Constants.*;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/4/27
  * @方法描述：这个就是动态线程池对象的处理器，具体逻辑是这样的，大家在创建动态线程池对象的时候，可以看看DynamicThreadPoolConfig类中给出的几个现成例子
  * 用户创建的动态线程池对象既可以以Executor的类型交给spring容器管理，也可以以ThreadPoolExecutor的类型交给spring容器管理，还可以直接以DynamicThreadPoolExecutor的类型交给spring的容器来管理
  * 当然，这些只是表面现象，使用不同的接口或者类型来接收动态线程池对象，实际上在内部，用户创建的就是一个DynamicThreadPoolExecutor对象，当然，这个DynamicThreadPoolExecutor
@@ -71,9 +68,7 @@ public final class DynamicThreadPoolPostProcessor implements BeanPostProcessor {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/4/27
+     *
      * @方法描述：这个方法就是本类最核心的方法，用来处理DynamicThreadPoolExecutor对象
      */
     @Override
@@ -141,9 +136,7 @@ public final class DynamicThreadPoolPostProcessor implements BeanPostProcessor {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/4/27
+     *
      * @方法描述：注册线程池信息到服务端的方法
      */
     protected ThreadPoolExecutor fillPoolAndRegister(DynamicThreadPoolWrapper dynamicThreadPoolWrapper) {

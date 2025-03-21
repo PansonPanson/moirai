@@ -12,9 +12,6 @@ import lombok.extern.slf4j.Slf4j;
 import static top.panson.common.constant.Constants.MONITOR_PATH;
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/8
  * @方法描述：运行时信息发送器，这个发送器会把线程池的运行时任务发送给服务端
  */
 @Slf4j

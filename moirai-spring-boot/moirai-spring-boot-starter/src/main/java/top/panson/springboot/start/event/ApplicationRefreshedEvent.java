@@ -20,9 +20,6 @@ package top.panson.springboot.start.event;
 import org.springframework.context.ApplicationEvent;
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/6
  * @方法描述：这个是框架内部自己定义的一个该事件会在spring容器成功启动之后被发布，这个事件是用来和健康检查机制配合的
  * 也就是说，只要这个事件一发布，客户端和服务端的心跳检测就会启动了
  */

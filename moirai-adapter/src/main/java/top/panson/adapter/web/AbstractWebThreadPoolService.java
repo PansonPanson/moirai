@@ -30,9 +30,6 @@ import java.util.concurrent.Executor;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/9
  * @方法描述：web容器线程池处理器的抽象父类，这个父类实现了springboot的ApplicationRunner接口，springboot容器启动完毕之后，这个接口中的方法才会被回调
  */
 @Slf4j
@@ -53,9 +50,6 @@ public abstract class AbstractWebThreadPoolService implements WebThreadPoolServi
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/9
      * @方法描述：得到web容器线程池的方法
      */
     @Override

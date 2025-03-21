@@ -37,9 +37,7 @@ import java.util.Objects;
 import java.util.concurrent.*;
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/10
+ *
  * @方法描述：默认的给用户发送线程池告警信息的对象，其中ThreadPoolCheckAlarm接口继承了CommandLineRunner接口
  */
 @Slf4j
@@ -87,9 +85,6 @@ public class DefaultThreadPoolCheckAlarmHandler implements Runnable, ThreadPoolC
     }
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/10
      * @方法描述：这个就是定时任务执行器要定期执行的任务
      */
     @Override
@@ -112,9 +107,6 @@ public class DefaultThreadPoolCheckAlarmHandler implements Runnable, ThreadPoolC
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/10
      * @方法描述：检查线程池队列容量是否需要报警的方法
      */
     @Override
@@ -144,9 +136,6 @@ public class DefaultThreadPoolCheckAlarmHandler implements Runnable, ThreadPoolC
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/10
      * @方法描述：检查线程池活跃度是否需要报警的方法
      */
     @Override
@@ -172,9 +161,6 @@ public class DefaultThreadPoolCheckAlarmHandler implements Runnable, ThreadPoolC
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/10
      * @方法描述：异步给线程池发送报警信息的方法，这个方法会在TaskRejectNotifyAlarmPlugin类中被调用，每当线程池拒绝了某个任务，就会调用这个方法通知用户
      */
     @Override
@@ -196,9 +182,6 @@ public class DefaultThreadPoolCheckAlarmHandler implements Runnable, ThreadPoolC
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/10
      * @方法描述：异步给用户发送线程池中执行任务超时的告警信息的方法
      */
     @Override

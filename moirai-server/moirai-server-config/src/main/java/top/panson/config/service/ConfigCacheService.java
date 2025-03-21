@@ -40,9 +40,7 @@ import static top.panson.common.constant.Constants.GROUP_KEY_DELIMITER_TRANSLATI
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/8
+ *
  * @方法描述：服务端缓存线程池信息的类
  */
 @Slf4j
@@ -87,9 +85,6 @@ public class ConfigCacheService {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/8
      * @方法描述：获取服务端对应线程池的md5的值，这里我多说一句，下面这些方法的逻辑都非常简单，但是有很多解析key或者组合key然后查询的操作
      * 我建议大家在看这一块代码的时候打个断点慢慢看，我当时看的时候也是打了断点，我就不再注释中给大家写明这些key或者value的值是什么了，这样就太麻烦了
      * 而且这也不是什么难点，反而是一些很简单的逻辑，就留给大家自己看看吧

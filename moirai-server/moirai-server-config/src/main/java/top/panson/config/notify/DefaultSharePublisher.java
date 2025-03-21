@@ -29,10 +29,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-/** 
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。 
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/8
+/**
+ *
  * @方法描述：这个是默认的共享事件发布器，这个类的逻辑非常简单，所谓共享，就是这个发布器可以发布很多事件，订阅不同事件的订阅者都可以存放到这个发布器中，这就是共享发布器的意思
  * 这个共享时间发布器主要处理慢事件类型的事件。但是在当前框架中，这个发布器根本用不到，因为是直接从nacos中搬运过来的，这个类在nacos中作用很大
  */ 

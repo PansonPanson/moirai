@@ -34,9 +34,7 @@ import java.util.List;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/8
+ *
  * @方法描述：这个控制器处理的是web界面线程池监控页面的请求
  */
 @Slf4j
@@ -57,9 +55,6 @@ public class MonitorController {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/8
      * @方法描述：当用户在web界面点击线程池监控页面，并且查询具体线程池的监控信息时，就会访问后端的这个接口，然后调用
      * hisRunDataService.queryInfoThreadPoolMonitor(reqDTO)方法把详细数据返回给前端
      */

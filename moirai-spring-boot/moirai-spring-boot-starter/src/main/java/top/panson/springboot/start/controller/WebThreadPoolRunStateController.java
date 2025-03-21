@@ -33,9 +33,6 @@ import java.util.List;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/8
  * @方法描述：客户端直接收集动态线程池实时信息的控制器，这个控制器是和服务端对接的，当用户在web界面想要查看线程池的实时运行状况和调用栈
  * 服务端肯定是没有这些实时信息的，于是服务端就会发送向客户端发送请求，让客户端收集线程池的实时信息，然后返回给服务端，服务端再返回给前端用户
  */

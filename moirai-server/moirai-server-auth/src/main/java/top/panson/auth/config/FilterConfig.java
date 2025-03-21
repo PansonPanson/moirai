@@ -23,9 +23,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author:B站UP主陈清风扬，从零带你写框架系列教程的作者，个人微信号：chenqingfengyangjj。
- * @Description:系列教程目前包括手写Netty，XXL-JOB，Spring，RocketMq，Javac，JVM等课程。
- * @Date:2024/4/29
+ *
  * @Description:过滤器配置类，在这里我跟大家解释一下，这个auth模块的类我就不添加注释了，这一块就是非常普通的逻辑
  * 和用户登陆有关的，鉴权什么的，jwt那一套，这个大家肯定都特别熟悉了，我也就不再费精力添加这一块的注释了，希望大家理解一下
  * 因为这个框架使用的是mybatisplus，大家直接去对应的impl类下查看查找数据库的逻辑即可

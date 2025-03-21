@@ -15,9 +15,7 @@ import java.util.function.BiFunction;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/8
+ *
  * @方法描述：事件通知中心，这个类的代码也是直接把nacos的NotifyCenter的大部分代码搬运过来了，有很多类和判断其实根本用不上，我本来想替作者删除这些无关的代码
  * 但是又想了想，也许作者是给以后的某些功能预留了拓展口，虽然这个可能性并不大，所以就不删除多余的代码了，如果大家先看到的是动态线程池框架，然后再学习nacos
  * 那么nacos的事件通知机制你在动态线程池框架中就能掌握了，学习nacos的时候会简单很多
@@ -69,9 +67,6 @@ public class NotifyCenter {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/8
      * @方法描述：注册订阅者到事件通知中心的方法
      */
     public static void registerSubscriber(final AbstractSubscriber consumer) {
@@ -100,9 +95,7 @@ public class NotifyCenter {
     }
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/8
+     *
      * @方法描述：把订阅者添加到通知中心的方法
      */
     private static void addSubscriber(final AbstractSubscriber consumer, Class<? extends AbstractEvent> subscribeType) {
@@ -120,9 +113,7 @@ public class NotifyCenter {
     }
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/8
+     *
      * @方法描述：事件通知中心发布事件的方法
      */
     public static boolean publishEvent(final AbstractEvent event) {
@@ -136,9 +127,7 @@ public class NotifyCenter {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/8
+     *
      * @方法描述：事件通知中心发布事件的方法
      */
     private static boolean publishEvent(final Class<? extends AbstractEvent> eventType, final AbstractEvent event) {

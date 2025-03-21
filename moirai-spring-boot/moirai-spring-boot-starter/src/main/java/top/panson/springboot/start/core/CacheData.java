@@ -13,9 +13,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/7
  * @方法描述：动态线程池在客户端的缓存数据对象
  */
 @Slf4j
@@ -81,9 +78,6 @@ public class CacheData {
     }
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/7
      * @方法描述：执行监听器的回调方法，动态刷新本地线程池信息
      */
     private void safeNotifyListener(String content, String md5, ManagerListenerWrapper managerListenerWrapper) {

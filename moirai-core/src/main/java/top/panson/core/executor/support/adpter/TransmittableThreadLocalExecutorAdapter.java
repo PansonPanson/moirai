@@ -25,9 +25,7 @@ import java.util.concurrent.Executor;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/4/27
+ *
  * @方法描述：ExecutorTtlWrapper对象的适配器，可以从ExecutorTtlWrapper对象中获得其持有的DynamicThreadPoolExecutor对象
  */
 public class TransmittableThreadLocalExecutorAdapter implements DynamicThreadPoolAdapter {

@@ -26,9 +26,6 @@ import static top.panson.common.constant.Constants.EXECUTE_TIMEOUT_TRACE;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/4/27
  * @方法描述：任务适配器，这个适配器的作用是就在线程池中的线程执行每一个任务之前，把任务超时的标志放到当前线程的本地变量中，这是用MDC实现的
  */
 public final class TaskTraceBuilderHandler implements TaskDecorator {

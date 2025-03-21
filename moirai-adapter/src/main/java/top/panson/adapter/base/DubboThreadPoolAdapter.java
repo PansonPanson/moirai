@@ -38,9 +38,6 @@ import static top.panson.common.constant.ChangeThreadPoolConstants.CHANGE_DELIMI
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/9
  * @方法描述：dubbo线程池处理器，这个处理器专门收集dubbo线程池的运行信息，并且还会动态更新dubbo线程池的配置信息
  */
 @Slf4j
@@ -98,9 +95,6 @@ public class DubboThreadPoolAdapter implements ThreadPoolAdapter, ApplicationLis
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/9
      * @方法描述：这个方法就是用来收集dubbo中线程池信息
      */
     @Override

@@ -42,9 +42,6 @@ import static top.panson.common.constant.Constants.SCHEDULED_THREAD_CORE_NUM;
 
 
 /**
- * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
- * @author：陈清风扬，个人微信号：chenqingfengyangjj。
- * @date:2024/5/6
  * @方法描述：服务端的服务发现组件的核心类，这个类提供了注册和缓存客户端服务实例的方法和功能
  */
 @Slf4j
@@ -135,9 +132,6 @@ public class BaseInstanceRegistry implements InstanceRegistry<InstanceInfo> {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/6
      * @方法描述：为服务实例续约的方法
      */
     @Override
@@ -162,9 +156,6 @@ public class BaseInstanceRegistry implements InstanceRegistry<InstanceInfo> {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/6
      * @方法描述：从注册表中移除对应服务实例的方法
      */
     @Override
@@ -190,9 +181,6 @@ public class BaseInstanceRegistry implements InstanceRegistry<InstanceInfo> {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/6
      * @方法描述：判断服务实例是否过期，并且移除过期服务实例的方法
      */
     public void evict(long additionalLeaseMs) {
@@ -240,9 +228,6 @@ public class BaseInstanceRegistry implements InstanceRegistry<InstanceInfo> {
 
 
     /**
-     * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-     * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-     * @date:2024/5/6
      * @方法描述：这个内部类是一个定时任务，定时任务的逻辑就是服务端定期检查哪个服务实例租约过期了，然后移除过期的服务实例信息
      */
     public class EvictionTask extends TimerTask {
@@ -267,9 +252,6 @@ public class BaseInstanceRegistry implements InstanceRegistry<InstanceInfo> {
 
 
         /**
-         * @课程描述:从零带你写框架系列中的课程，整个系列包含netty，xxl-job，rocketmq，nacos，sofajraft，spring，springboot，disruptor，编译器，虚拟机等等。
-         * @author：陈清风扬，个人微信号：chenqingfengyangjj。
-         * @date:2024/5/6
          * @方法描述：得到服务实例过期时间的方法，这里我的注释可能有点模糊，让我再来为大家解释解释一下，判断一个服务实例是否过期的方式很简单
          * 因为客户端每一次续约都会在服务端更新服务实例的最新一次的更新时间，而目前这个方法得到的就是服务实例过期时间，比如说这个过期时间是5秒
          * 只要再每次定时任务中，让当前时间减去服务实例最后一次更新时间，只要超过5秒了，就意味着这个服务实例过期了，如果没有超过5秒
