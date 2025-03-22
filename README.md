@@ -31,5 +31,15 @@ Moirai 是一个参考 Hippo4j 写的动态线程池框架，核心逻辑与 Hip
 + [Tomcat 对 jdk 线程池进行了哪些修改？.md](doc/Tomcat%20%E5%AF%B9%20jdk%20%E7%BA%BF%E7%A8%8B%E6%B1%A0%E8%BF%9B%E8%A1%8C%E4%BA%86%E5%93%AA%E4%BA%9B%E4%BF%AE%E6%94%B9%EF%BC%9F.md)
 
 ### 如何设计一个动态线程池框架？
++ 明确监控的线程池信息（直接读取的核心参数、加工后的数据）
++ 支持第三方线程池（transmittable-thread-local、Spring ThreadPoolTaskExecutor……）
++ 客户端与服务端的信息交互：
+  + 服务发现
+  + 续约
+  + 故障移除
++ 告警机制
++ ……
+
+### 进一步优化
 + 
 
