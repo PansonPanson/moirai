@@ -6,6 +6,7 @@ Moirai 是一个参考 Hippo4j 写的动态线程池框架，核心逻辑与 Hip
 **由于个人能力和精力有限，请不要在生产环境使用本框架**
 
 ## 目录
+### 线程池相关
 + [为什么Java要设计一个线程池？](https://github.com/PansonPanson/moirai/blob/main/doc/001_Java%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%AE%BE%E8%AE%A1%E7%BA%BF%E7%A8%8B%E6%B1%A0%EF%BC%9F.md)
 + [万字长文之线程池源码深入分析](https://github.com/PansonPanson/moirai/blob/main/doc/002_%E7%BA%BF%E7%A8%8B%E6%B1%A0%E6%BA%90%E7%A0%81%E6%B7%B1%E5%85%A5%E5%88%86%E6%9E%90.md)
 + [线程池源码涉及到的位运算以及相应算法练习](https://github.com/PansonPanson/moirai/blob/main/doc/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E6%BA%90%E7%A0%81%E6%B6%89%E5%8F%8A%E5%88%B0%E7%9A%84%E4%BD%8D%E8%BF%90%E7%AE%97%E4%BB%A5%E5%8F%8A%E7%9B%B8%E5%BA%94%E7%AE%97%E6%B3%95%E7%BB%83%E4%B9%A0.md) 
@@ -17,22 +18,18 @@ Moirai 是一个参考 Hippo4j 写的动态线程池框架，核心逻辑与 Hip
 + [线程池的核心线程会被回收吗？](https://github.com/PansonPanson/moirai/blob/main/doc/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%A0%B8%E5%BF%83%E7%BA%BF%E7%A8%8B%E4%BC%9A%E8%A2%AB%E5%9B%9E%E6%94%B6%E5%90%97%EF%BC%9F.md)
 + [线程池提交一个任务占多大内存？](https://github.com/PansonPanson/moirai/blob/main/doc/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E6%8F%90%E4%BA%A4%E4%B8%80%E4%B8%AA%E4%BB%BB%E5%8A%A1%E5%8D%A0%E5%A4%9A%E5%A4%A7%E5%86%85%E5%AD%98%EF%BC%9F.md) 
 + [如何保证服务器宕机后线程池不丢失数据?](https://github.com/PansonPanson/moirai/blob/main/doc/%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%95%E6%9C%BA%E5%90%8E%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%8D%E4%B8%A2%E5%A4%B1%E6%95%B0%E6%8D%AE%EF%BC%9F.md)
-+ [如何设计一个线程池]() 
-+ 线程池如何监控 
-+ 线程池10连问 
-+ JVM STW 和 Dubbo 线程池耗尽的相关性 
-+ 虚拟线程原理及性能分析 
-+ ForkJoinPool 
++ [如何设计一个线程池](https://github.com/PansonPanson/moirai/blob/main/doc/%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%95%E6%9C%BA%E5%90%8E%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%8D%E4%B8%A2%E5%A4%B1%E6%95%B0%E6%8D%AE%EF%BC%9F.md)
++ [FutureTask源码深入分析？.md](doc/FutureTask%E6%BA%90%E7%A0%81%E6%B7%B1%E5%85%A5%E5%88%86%E6%9E%90%EF%BC%9F.md)
++ [虚拟线程原理及性能分析.md](doc/%E8%99%9A%E6%8B%9F%E7%BA%BF%E7%A8%8B%E5%8E%9F%E7%90%86%E5%8F%8A%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90.md) 
++ [ForkJoinPool 源码深入分析？.md](doc/ForkJoinPool%20%E6%BA%90%E7%A0%81%E6%B7%B1%E5%85%A5%E5%88%86%E6%9E%90%EF%BC%9F.md)[ForkJoinPool 源码深入分析？.md]()
 + Spring 的线程池设计 
   + Spring中Async注解底层异步线程池原理 
   + [DisposableBean 作用与原理](https://github.com/PansonPanson/moirai/blob/main/doc/DisposableBean%E4%BD%9C%E7%94%A8%E4%B8%8E%E5%8E%9F%E7%90%86.md)
 + Dubbo 的线程池设计 
 + RocketMQ 的线程池设计 
-+ Tomcat 线程池改造
++ 时间轮
++ [Tomcat 对 jdk 线程池进行了哪些修改？.md](doc/Tomcat%20%E5%AF%B9%20jdk%20%E7%BA%BF%E7%A8%8B%E6%B1%A0%E8%BF%9B%E8%A1%8C%E4%BA%86%E5%93%AA%E4%BA%9B%E4%BF%AE%E6%94%B9%EF%BC%9F.md)
 
-## 更新 log
-### 增加可扩容的阻塞队列 ResizableCapacityLinkedBlockingQueue
-主要是增加 capacity 动态更新入口（方法）
-+ 将队列容量设置为新容量
-+ 如果新的容量大于旧容量，则唤醒阻塞的入队线程
+### 如何设计一个动态线程池框架？
++ 
 
