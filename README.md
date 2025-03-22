@@ -1,5 +1,9 @@
 # Moirai
-动态线程池
+Moirai 是一个参考 Hippo4j 写的动态线程池框架，核心逻辑与 Hippo4j 一致，主要用于个人学习，在亲手造轮子中学习 Hippo4j 源码，以及学习动态线程池的设计原理与编码实践。
+
+除了框架本身以外，本仓库还较为系统性整理了动态线程池相关的知识，欢迎交流。
+
+**由于个人能力和精力有限，请不要在生产环境使用本框架**
 
 ## 目录
 + [为什么Java要设计一个线程池？](https://github.com/PansonPanson/moirai/blob/main/doc/001_Java%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%AE%BE%E8%AE%A1%E7%BA%BF%E7%A8%8B%E6%B1%A0%EF%BC%9F.md)
@@ -12,8 +16,8 @@
 + [线程池异常后：销毁还是复用](https://github.com/PansonPanson/moirai/blob/main/doc/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%BC%82%E5%B8%B8%E5%90%8E%E6%98%AF%E8%A2%AB%E9%94%80%E6%AF%81%E8%BF%98%E6%98%AF%E5%A4%8D%E7%94%A8%EF%BC%9F.md) 
 + [线程池的核心线程会被回收吗？](https://github.com/PansonPanson/moirai/blob/main/doc/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%A0%B8%E5%BF%83%E7%BA%BF%E7%A8%8B%E4%BC%9A%E8%A2%AB%E5%9B%9E%E6%94%B6%E5%90%97%EF%BC%9F.md)
 + [线程池提交一个任务占多大内存？](https://github.com/PansonPanson/moirai/blob/main/doc/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E6%8F%90%E4%BA%A4%E4%B8%80%E4%B8%AA%E4%BB%BB%E5%8A%A1%E5%8D%A0%E5%A4%9A%E5%A4%A7%E5%86%85%E5%AD%98%EF%BC%9F.md) 
-+ [如何保证服务器宕机后线程池不丢失数据?]()
-+ 如何设计一个线程池 
++ [如何保证服务器宕机后线程池不丢失数据?](https://github.com/PansonPanson/moirai/blob/main/doc/%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%95%E6%9C%BA%E5%90%8E%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%8D%E4%B8%A2%E5%A4%B1%E6%95%B0%E6%8D%AE%EF%BC%9F.md)
++ [如何设计一个线程池]() 
 + 线程池如何监控 
 + 线程池10连问 
 + JVM STW 和 Dubbo 线程池耗尽的相关性 
