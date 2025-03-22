@@ -10,7 +10,7 @@
 + [核心线程数为0时，线程池如何执行？](https://github.com/PansonPanson/moirai/blob/main/doc/%E6%A0%B8%E5%BF%83%E7%BA%BF%E7%A8%8B%E6%95%B0%E4%B8%BA%200%20%E6%97%B6%EF%BC%8C%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%A6%82%E6%9E%9C%E6%89%A7%E8%A1%8C%E4%BB%BB%E5%8A%A1%EF%BC%9F.md) 
 + [线程池中那些信息是可以被监控的？](https://github.com/PansonPanson/moirai/blob/main/doc/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%AD%E5%93%AA%E4%BA%9B%E4%BF%A1%E6%81%AF%E6%98%AF%E5%8F%AF%E4%BB%A5%E8%A2%AB%E7%9B%91%E6%8E%A7%E7%9A%84%EF%BC%9F.md)
 + [线程池异常后：销毁还是复用](https://github.com/PansonPanson/moirai/blob/main/doc/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%BC%82%E5%B8%B8%E5%90%8E%E6%98%AF%E8%A2%AB%E9%94%80%E6%AF%81%E8%BF%98%E6%98%AF%E5%A4%8D%E7%94%A8%EF%BC%9F.md) 
-+ [线程池的核心线程会被回收吗？] 
++ [线程池的核心线程会被回收吗？] (https://github.com/PansonPanson/moirai/blob/main/doc/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%A0%B8%E5%BF%83%E7%BA%BF%E7%A8%8B%E4%BC%9A%E8%A2%AB%E5%9B%9E%E6%94%B6%E5%90%97%EF%BC%9F.md)
 + 线程池提交一个任务占多大内存？ 
 + 服务down机了，线程池中如何保证不丢失数据 
 + 如何设计一个线程池 
