@@ -67,7 +67,7 @@ graph TD
 ### Spring 相关
 + [DisposableBean 作用与原理](https://github.com/PansonPanson/moirai/blob/main/doc/DisposableBean%E4%BD%9C%E7%94%A8%E4%B8%8E%E5%8E%9F%E7%90%86.md)
 + [如何自定义一个 SpringBoot starter ?.md](doc/%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%80%E4%B8%AA%20SpringBoot%20starter%3F.md)
-
++ 
 
 ### 如何设计一个动态线程池框架？
 + 明确监控的线程池信息（直接读取的核心参数、加工后的数据）
