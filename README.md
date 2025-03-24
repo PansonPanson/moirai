@@ -3,7 +3,42 @@ Moirai 是一个参考 Hippo4j 写的动态线程池框架，核心逻辑与 Hip
 
 除了框架本身以外，本仓库还较为系统性整理了动态线程池相关的知识，欢迎交流。
 
-**由于个人能力和精力有限，请不要在生产环境使用本框架**
+## maven 依赖关系（project module）
+```
+moirai-server-bootstrap (0.0.1-SNAPSHOT)
+└── moirai-server-console (compile)
+    ├── moirai-server-config (compile)
+    │   ├── moirai-common (compile)
+    │   └── moirai-adapter (compile)
+    │       └── moirai-core (compile)
+    │           └── moirai-server-monitor-base (compile)
+    ├── moirai-server-discovery (compile)
+    └── moirai-server-auth (compile)
+```
+
+
+1. 根节点是 `moirai-server-bootstrap`
+2. 直接依赖是 `moirai-server-console`（编译作用域）
+3. 二级依赖包含三个模块： 
+   - 配置模块 `moirai-server-config`
+   - 服务发现模块 `moirai-server-discovery`
+   - 认证模块 `moirai-server-auth`
+4. 配置模块延伸出基础技术栈：
+   - 公共模块 → 适配器 → 核心模块 → 监控基础模块
+
+
+```mermaid
+graph TD
+    A[moirai-server-bootstrap] --> B[moirai-server-console]
+    B --> C[moirai-server-config]
+    B --> D[moirai-server-discovery]
+    B --> E[moirai-server-auth]
+    C --> F[moirai-common]
+    C --> G[moirai-adapter]
+    G --> H[moirai-core]
+    H --> I[moirai-server-monitor-base]
+```
+
 
 ## 目录
 ### 线程池相关
@@ -33,11 +68,14 @@ Moirai 是一个参考 Hippo4j 写的动态线程池框架，核心逻辑与 Hip
 ### 如何设计一个动态线程池框架？
 + 明确监控的线程池信息（直接读取的核心参数、加工后的数据）
 + 支持第三方线程池（transmittable-thread-local、Spring ThreadPoolTaskExecutor……）
-+ 客户端与服务端的信息交互：
-  + 服务发现
-  + 续约
-  + 故障移除
++ 客户端上报动态线程池配置信息到服务端
++ 客户端收集并上报动态线程池运行时信息到服务端
++ 客户端根据服务端通知，动态刷新本地线程池配置
++ 服务发现
++ 续约
++ 故障移除
 + 告警机制
++ 长轮询，实现线程池配置信息的动态变更
 + ……
 
 ### 进一步优化
