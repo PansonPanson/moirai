@@ -5,15 +5,15 @@ Moirai 是一个参考 Hippo4j 写的动态线程池框架，核心逻辑与 Hip
 
 ## maven 依赖关系（project module）
 ```
-moirai-server-bootstrap (0.0.1-SNAPSHOT)
-└── moirai-server-console (compile)
-    ├── moirai-server-config (compile)
-    │   ├── moirai-common (compile)
-    │   └── moirai-adapter (compile)
-    │       └── moirai-core (compile)
-    │           └── moirai-server-monitor-base (compile)
-    ├── moirai-server-discovery (compile)
-    └── moirai-server-auth (compile)
+moirai-server-bootstrap 
+└── moirai-server-console 
+    ├── moirai-server-config
+    │   ├── moirai-common 
+    │   └── moirai-adapter 
+    │       └── moirai-core 
+    │           └── moirai-server-monitor-base 
+    ├── moirai-server-discovery 
+    └── moirai-server-auth 
 ```
 
 
