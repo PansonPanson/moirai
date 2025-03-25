@@ -3,7 +3,7 @@ Moirai 是一个参考 Hippo4j 写的动态线程池框架，核心逻辑与 Hip
 
 除了框架本身以外，本仓库还较为系统性整理了动态线程池相关的知识，欢迎交流。
 
-## maven 依赖关系（project module）
+## moirai-server-bootstrap maven 依赖关系（project module）
 ```
 moirai-server-bootstrap 
 └── moirai-server-console 
@@ -38,6 +38,27 @@ graph TD
     G --> H[moirai-core]
     H --> I[moirai-server-monitor-base]
 ```
+
+
+## moirai-example maven 依赖关系（project module）
+依赖关系图：
+
+```mermaid
+graph TD
+    A[moirai-example] --> B[moirai-spring-boot-starter]
+    B --> C[moirai-core]
+    C --> D[moirai-common]
+    B --> E[moirai-server-monitor-base]
+    B --> F[moirai-adapter]
+    B --> G[moirai-message]
+```
+
+### 关键特征：
+1. **层级结构**：
+    - Level 0: 根模块 `moirai-example`
+    - Level 1: 核心依赖 `moirai-spring-boot-starter`
+    - Level 2: Starter 的四个直接子模块
+    - Level 3: `moirai-core` 的唯一子模块 `moirai-common`
 
 
 ## 目录
