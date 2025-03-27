@@ -53,12 +53,130 @@ graph TD
     B --> G[moirai-message]
 ```
 
-### 关键特征：
-1. **层级结构**：
+
+**层级结构**：
     - Level 0: 根模块 `moirai-example`
     - Level 1: 核心依赖 `moirai-spring-boot-starter`
     - Level 2: Starter 的四个直接子模块
     - Level 3: `moirai-core` 的唯一子模块 `moirai-common`
+
+## 插件体系
+
+```mermaid
+classDiagram
+direction BT
+class AbstractTaskTimerPlugin {
+  + AbstractTaskTimerPlugin() 
+  + beforeExecute(Thread, Runnable) void
+  # currentTime() long
+  # processTaskTime(long) void
+  + afterExecute(Runnable, Throwable) void
+}
+class ExecuteAwarePlugin {
+<<Interface>>
+  + beforeExecute(Thread, Runnable) void
+  + afterExecute(Runnable, Throwable) void
+}
+class RejectedAwarePlugin {
+<<Interface>>
+  + beforeRejectedExecution(Runnable, ThreadPoolExecutor) void
+}
+class ShutdownAwarePlugin {
+<<Interface>>
+  + afterShutdown(ThreadPoolExecutor, List~Runnable~) void
+  + afterTerminated(ExtensibleThreadPoolExecutor) void
+  + beforeShutdown(ThreadPoolExecutor) void
+}
+class Summary {
+  + Summary(long, long, long, long) 
+  - long taskCount
+  - long minTaskTimeMillis
+  - long totalTaskTimeMillis
+  - long maxTaskTimeMillis
+   long maxTaskTimeMillis
+   long taskCount
+   long minTaskTimeMillis
+   long totalTaskTimeMillis
+   long avgTaskTimeMillis
+}
+class TaskAwarePlugin {
+<<Interface>>
+  + beforeTaskCreate(ThreadPoolExecutor, Runnable, V) Runnable
+  + beforeTaskCreate(ThreadPoolExecutor, Callable~V~) Callable~V~
+  + beforeTaskExecute(Runnable) Runnable
+}
+class TaskDecoratorPlugin {
+  + TaskDecoratorPlugin() 
+  - List~TaskDecorator~ decorators
+  + removeDecorator(TaskDecorator) void
+  + clearDecorators() void
+  + beforeTaskExecute(Runnable) Runnable
+  + addDecorator(TaskDecorator) void
+   PluginRuntime pluginRuntime
+   String id
+   List~TaskDecorator~ decorators
+}
+class TaskRejectCountRecordPlugin {
+  + TaskRejectCountRecordPlugin() 
+  - AtomicLong rejectCount
+  + beforeRejectedExecution(Runnable, ThreadPoolExecutor) void
+   PluginRuntime pluginRuntime
+   Long rejectCountNum
+   AtomicLong rejectCount
+   String id
+}
+class TaskRejectNotifyAlarmPlugin {
+  + TaskRejectNotifyAlarmPlugin() 
+  + beforeRejectedExecution(Runnable, ThreadPoolExecutor) void
+   String id
+}
+class TaskTimeRecordPlugin {
+  + TaskTimeRecordPlugin() 
+  + summarize() Summary
+  # processTaskTime(long) void
+   PluginRuntime pluginRuntime
+   String id
+}
+class TaskTimeoutNotifyAlarmPlugin {
+  + TaskTimeoutNotifyAlarmPlugin(String, Long, ThreadPoolExecutor) 
+  - Long executeTimeOut
+  # processTaskTime(long) void
+   String id
+   Long executeTimeOut
+}
+class ThreadPoolExecutorShutdownPlugin {
+  + ThreadPoolExecutorShutdownPlugin(long) 
+  + long awaitTerminationMillis
+  - awaitTerminationIfNecessary(ExtensibleThreadPoolExecutor) void
+  + beforeShutdown(ThreadPoolExecutor) void
+  # cancelRemainingTask(Runnable) void
+  + afterShutdown(ThreadPoolExecutor, List~Runnable~) void
+   PluginRuntime pluginRuntime
+   String id
+   long awaitTerminationMillis
+}
+class ThreadPoolPlugin {
+<<Interface>>
+  + start() void
+  + stop() void
+   PluginRuntime pluginRuntime
+   String id
+}
+
+AbstractTaskTimerPlugin  ..>  ExecuteAwarePlugin 
+ExecuteAwarePlugin  -->  ThreadPoolPlugin 
+RejectedAwarePlugin  -->  ThreadPoolPlugin 
+ShutdownAwarePlugin  -->  ThreadPoolPlugin 
+TaskTimeRecordPlugin  -->  Summary 
+TaskAwarePlugin  -->  ThreadPoolPlugin 
+TaskDecoratorPlugin  ..>  TaskAwarePlugin 
+TaskRejectCountRecordPlugin  ..>  RejectedAwarePlugin 
+TaskRejectNotifyAlarmPlugin  ..>  RejectedAwarePlugin 
+TaskTimeRecordPlugin  -->  AbstractTaskTimerPlugin 
+TaskTimeoutNotifyAlarmPlugin  -->  AbstractTaskTimerPlugin 
+ThreadPoolExecutorShutdownPlugin  ..>  ShutdownAwarePlugin 
+
+```
 
 
 ## 目录
