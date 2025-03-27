@@ -91,7 +91,7 @@ graph TD
 + [SpringBoot starter 原理.md](doc/SpringBoot%20starter%20%E5%8E%9F%E7%90%86.md)
 
 ### 如何设计一个动态线程池框架？
-+ [明确监控的线程池信息（直接读取的核心参数、加工后的数据）.md](doc/%E6%98%8E%E7%A1%AE%E7%9B%91%E6%8E%A7%E7%9A%84%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%BF%A1%E6%81%AF%EF%BC%88%E7%9B%B4%E6%8E%A5%E8%AF%BB%E5%8F%96%E7%9A%84%E6%A0%B8%E5%BF%83%E5%8F%82%E6%95%B0%E3%80%81%E5%8A%A0%E5%B7%A5%E5%90%8E%E7%9A%84%E6%95%B0%E6%8D%AE%EF%BC%89.md)明确监控的线程池信息（直接读取的核心参数、加工后的数据）
++ [明确监控的线程池信息（直接读取的核心参数、加工后的数据）.md](doc/%E6%98%8E%E7%A1%AE%E7%9B%91%E6%8E%A7%E7%9A%84%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%BF%A1%E6%81%AF%EF%BC%88%E7%9B%B4%E6%8E%A5%E8%AF%BB%E5%8F%96%E7%9A%84%E6%A0%B8%E5%BF%83%E5%8F%82%E6%95%B0%E3%80%81%E5%8A%A0%E5%B7%A5%E5%90%8E%E7%9A%84%E6%95%B0%E6%8D%AE%EF%BC%89.md)
 + [明确可以动态更新的线程池信息.md](doc/%E6%98%8E%E7%A1%AE%E5%8F%AF%E4%BB%A5%E5%8A%A8%E6%80%81%E6%9B%B4%E6%96%B0%E7%9A%84%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%BF%A1%E6%81%AF.md)
 + 支持第三方线程池（transmittable-thread-local、Spring ThreadPoolTaskExecutor……）
 + 客户端上报动态线程池配置信息到服务端
