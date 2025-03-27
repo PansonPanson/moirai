@@ -93,6 +93,8 @@ graph TD
 ### 如何设计一个动态线程池框架？
 + [明确监控的线程池信息（直接读取的核心参数、加工后的数据）.md](doc/%E6%98%8E%E7%A1%AE%E7%9B%91%E6%8E%A7%E7%9A%84%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%BF%A1%E6%81%AF%EF%BC%88%E7%9B%B4%E6%8E%A5%E8%AF%BB%E5%8F%96%E7%9A%84%E6%A0%B8%E5%BF%83%E5%8F%82%E6%95%B0%E3%80%81%E5%8A%A0%E5%B7%A5%E5%90%8E%E7%9A%84%E6%95%B0%E6%8D%AE%EF%BC%89.md)
 + [明确可以动态更新的线程池信息.md](doc/%E6%98%8E%E7%A1%AE%E5%8F%AF%E4%BB%A5%E5%8A%A8%E6%80%81%E6%9B%B4%E6%96%B0%E7%9A%84%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%BF%A1%E6%81%AF.md)
++ [自定义可变容量的阻塞队列.md](doc/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%AF%E5%8F%98%E5%AE%B9%E9%87%8F%E7%9A%84%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97.md)
++ 
 + 支持第三方线程池（transmittable-thread-local、Spring ThreadPoolTaskExecutor……）
 + 客户端上报动态线程池配置信息到服务端
 + 客户端收集并上报动态线程池运行时信息到服务端
