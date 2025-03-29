@@ -3,7 +3,9 @@ Moirai 是一个参考 Hippo4j 写的动态线程池框架，核心逻辑与 Hip
 
 除了框架本身以外，本仓库还较为系统性整理了动态线程池相关的知识，欢迎交流。
 
-## moirai-server-bootstrap maven 依赖关系（project module）
+## 一、模块依赖关系
+### moirai-server-bootstrap maven 依赖关系（project module）
+
 ```
 moirai-server-bootstrap 
 └── moirai-server-console 
@@ -40,7 +42,7 @@ graph TD
 ```
 
 
-## moirai-example maven 依赖关系（project module）
+### moirai-example maven 依赖关系（project module）
 依赖关系图：
 
 ```mermaid
@@ -60,7 +62,7 @@ graph TD
     - Level 2: Starter 的四个直接子模块
     - Level 3: `moirai-core` 的唯一子模块 `moirai-common`
 
-## 插件体系
+## 二、插件体系
 
 ```mermaid
 classDiagram
@@ -179,7 +181,7 @@ ThreadPoolExecutorShutdownPlugin  ..>  ShutdownAwarePlugin
 ```
 
 
-## 线程池配置信息是如何注册到服务端的?
+## 三、线程池配置信息是如何注册到服务端的?
 
 ```mermaid
 graph TD
