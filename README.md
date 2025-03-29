@@ -218,6 +218,7 @@ ThreadPoolExecutorShutdownPlugin  ..>  ShutdownAwarePlugin
 + [动态线程池的扩展点以及插件体系.md](doc/%E5%8A%A8%E6%80%81%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%89%A9%E5%B1%95%E7%82%B9%E4%BB%A5%E5%8F%8A%E6%8F%92%E4%BB%B6%E4%BD%93%E7%B3%BB.md)
 + [提供默认插件注册功能.md](doc/%E6%8F%90%E4%BE%9B%E9%BB%98%E8%AE%A4%E6%8F%92%E4%BB%B6%E6%B3%A8%E5%86%8C%E5%8A%9F%E8%83%BD.md)
 + [使用 Builder 模式构建动态线程池.md](doc/%E4%BD%BF%E7%94%A8%20Builder%20%E6%A8%A1%E5%BC%8F%E6%9E%84%E5%BB%BA%E5%8A%A8%E6%80%81%E7%BA%BF%E7%A8%8B%E6%B1%A0.md)
++ [线程池配置信息是如何注册到服务端的?.md](doc/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF%E6%98%AF%E5%A6%82%E4%BD%95%E6%B3%A8%E5%86%8C%E5%88%B0%E6%9C%8D%E5%8A%A1%E7%AB%AF%E7%9A%84%3F.md)
 + 支持第三方线程池（transmittable-thread-local、Spring ThreadPoolTaskExecutor……）
 + 客户端上报动态线程池配置信息到服务端
 + 客户端收集并上报动态线程池运行时信息到服务端

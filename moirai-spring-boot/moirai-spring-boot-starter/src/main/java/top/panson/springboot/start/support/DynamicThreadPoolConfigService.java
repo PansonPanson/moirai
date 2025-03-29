@@ -62,7 +62,7 @@ public class DynamicThreadPoolConfigService extends AbstractDynamicThreadPoolSer
         //得到动态线程池Id
         String threadPoolId = registerParameter.getThreadPoolId();
         try {//向要注册到服务端的线程池对象中设置租户信息和项目Id
-            failDynamicThreadPoolRegisterWrapper(registerWrapper);
+            fillDynamicThreadPoolRegisterWrapper(registerWrapper);
             //在这里向服务端注册了动态线程池的信息，注意，这里是直接把registerWrapper这个DynamicThreadPoolRegisterWrapper类型的对象传输给服务端了
             //并且这里使用的是http通信方式，服务端接收这个请求的是ConfigController类的register方法，大家可以直接去服务端看看接收之后的注册逻辑
             Result registerResult = httpAgent.httpPost(REGISTER_DYNAMIC_THREAD_POOL_PATH, registerWrapper);
@@ -86,7 +86,7 @@ public class DynamicThreadPoolConfigService extends AbstractDynamicThreadPoolSer
     }
 
     //向要注册到服务端的线程池对象中设置租户信息和项目Id的方法
-    private void failDynamicThreadPoolRegisterWrapper(DynamicThreadPoolRegisterWrapper registerWrapper) {
+    private void fillDynamicThreadPoolRegisterWrapper(DynamicThreadPoolRegisterWrapper registerWrapper) {
         registerWrapper.setTenantId(properties.getNamespace());
         registerWrapper.setItemId(properties.getItemId());
     }
