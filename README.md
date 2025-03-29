@@ -179,6 +179,66 @@ ThreadPoolExecutorShutdownPlugin  ..>  ShutdownAwarePlugin
 ```
 
 
+## 线程池配置信息是如何注册到服务端的?
+
+```mermaid
+graph TD
+A[开始: postProcessAfterInitialization] --> B{Bean是DynamicThreadPoolExecutor<br/>或适配器匹配?}
+B -->|是| C{检查DynamicThreadPool注解}
+B -->|否| D{Bean是DynamicThreadPoolWrapper?}
+D -->|是| E[调用registerAndSubscribe]
+D -->|否| Z[返回bean]
+
+    C -->|找到注解| F[提取DynamicThreadPoolExecutor实例]
+    C -->|未找到注解| Z
+    
+    F --> G[创建DynamicThreadPoolWrapper]
+    G --> H[调用fillPoolAndRegister]
+    
+    subgraph fillPoolAndRegister流程
+        H --> I[构建查询参数]
+        I --> J[HTTP GET查询服务端配置]
+        J --> K{服务端存在配置?}
+        K -->|是| L[更新本地线程池参数]
+        K -->|否| M[构建DynamicThreadPoolRegisterParameter]
+        L --> N[注册到GlobalThreadPoolManage]
+        M --> O[调用GlobalThreadPoolManage.dynamicRegister]
+        O --> P[触发DynamicThreadPoolConfigService注册]
+        P --> Q[HTTP POST注册到服务端]
+        Q --> R{注册成功?}
+        R -->|是| S[缓存告警配置]
+        R -->|否| T[记录错误日志]
+        S --> N
+    end
+    
+    H --> U[替换第三方线程池执行器]
+    U --> V[订阅配置更新]
+    V --> W[返回处理后的bean]
+    
+    E --> X[调用registerAndSubscribe]
+    X --> Y[同fillPoolAndRegister流程]
+    
+    subgraph GlobalThreadPoolManage
+        N --> AA[存入EXECUTOR_MAP]
+        N --> AB[存入POOL_PARAMETER]
+    end
+    
+    subgraph DynamicThreadPoolConfigService
+        P --> BA[参数校验]
+        BA --> BB[填充租户/项目信息]
+        BB --> BC[发送HTTP请求]
+        BC --> BD[处理告警配置]
+    end
+    
+    style A fill:#f9f,stroke:#333
+    style Z fill:#f9f,stroke:#333
+    style H fill:#bbf,stroke:#666
+    style N fill:#bfb,stroke:#666
+    style P fill:#fbb,stroke:#666
+    
+```
+
+
 ## 目录
 ### 线程池相关
 + [为什么Java要设计一个线程池？](https://github.com/PansonPanson/moirai/blob/main/doc/001_Java%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%AE%BE%E8%AE%A1%E7%BA%BF%E7%A8%8B%E6%B1%A0%EF%BC%9F.md)
