@@ -3,6 +3,25 @@ Moirai 是一个参考 Hippo4j 写的动态线程池框架，核心逻辑与 Hip
 
 除了框架本身以外，本仓库还较为系统性整理了动态线程池相关的知识，欢迎交流。
 
+### 如何设计一个动态线程池框架？
++ [明确监控的线程池信息（直接读取的核心参数、加工后的数据）.md](doc/%E6%98%8E%E7%A1%AE%E7%9B%91%E6%8E%A7%E7%9A%84%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%BF%A1%E6%81%AF%EF%BC%88%E7%9B%B4%E6%8E%A5%E8%AF%BB%E5%8F%96%E7%9A%84%E6%A0%B8%E5%BF%83%E5%8F%82%E6%95%B0%E3%80%81%E5%8A%A0%E5%B7%A5%E5%90%8E%E7%9A%84%E6%95%B0%E6%8D%AE%EF%BC%89.md)
++ [明确可以动态更新的线程池信息.md](doc/%E6%98%8E%E7%A1%AE%E5%8F%AF%E4%BB%A5%E5%8A%A8%E6%80%81%E6%9B%B4%E6%96%B0%E7%9A%84%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%BF%A1%E6%81%AF.md)
++ [自定义可变容量的阻塞队列.md](doc/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%AF%E5%8F%98%E5%AE%B9%E9%87%8F%E7%9A%84%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97.md)
++ [动态线程池的扩展点以及插件体系.md](doc/%E5%8A%A8%E6%80%81%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%89%A9%E5%B1%95%E7%82%B9%E4%BB%A5%E5%8F%8A%E6%8F%92%E4%BB%B6%E4%BD%93%E7%B3%BB.md)
++ [提供默认插件注册功能.md](doc/%E6%8F%90%E4%BE%9B%E9%BB%98%E8%AE%A4%E6%8F%92%E4%BB%B6%E6%B3%A8%E5%86%8C%E5%8A%9F%E8%83%BD.md)
++ [使用 Builder 模式构建动态线程池.md](doc/%E4%BD%BF%E7%94%A8%20Builder%20%E6%A8%A1%E5%BC%8F%E6%9E%84%E5%BB%BA%E5%8A%A8%E6%80%81%E7%BA%BF%E7%A8%8B%E6%B1%A0.md)
++ [线程池配置信息注册到服务端.md](doc/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF%E6%98%AF%E5%A6%82%E4%BD%95%E6%B3%A8%E5%86%8C%E5%88%B0%E6%9C%8D%E5%8A%A1%E7%AB%AF%E7%9A%84%3F.md)
++ [适配 TTL 和 Spring ThreadPoolTaskExecutor.md](doc/%E9%80%82%E9%85%8D%20TTL%20%E5%92%8C%20Spring%20ThreadPoolTaskExecutor.md)
++ [服务发现.md](doc/%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0.md)
++ 客户端收集并上报动态线程池运行时信息到服务端
++ 客户端根据服务端通知，动态刷新本地线程池配置
++ 服务发现
++ 续约
++ 故障移除
++ 告警机制
++ 长轮询，实现线程池配置信息的动态变更
++ ……
+
 ## 一、模块依赖关系
 ### moirai-server-bootstrap maven 依赖关系（project module）
 
@@ -243,25 +262,7 @@ D -->|否| Z[返回bean]
 
 ## 四、目录
 
-### 如何设计一个动态线程池框架？
-+ [明确监控的线程池信息（直接读取的核心参数、加工后的数据）.md](doc/%E6%98%8E%E7%A1%AE%E7%9B%91%E6%8E%A7%E7%9A%84%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%BF%A1%E6%81%AF%EF%BC%88%E7%9B%B4%E6%8E%A5%E8%AF%BB%E5%8F%96%E7%9A%84%E6%A0%B8%E5%BF%83%E5%8F%82%E6%95%B0%E3%80%81%E5%8A%A0%E5%B7%A5%E5%90%8E%E7%9A%84%E6%95%B0%E6%8D%AE%EF%BC%89.md)
-+ [明确可以动态更新的线程池信息.md](doc/%E6%98%8E%E7%A1%AE%E5%8F%AF%E4%BB%A5%E5%8A%A8%E6%80%81%E6%9B%B4%E6%96%B0%E7%9A%84%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%BF%A1%E6%81%AF.md)
-+ [自定义可变容量的阻塞队列.md](doc/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%AF%E5%8F%98%E5%AE%B9%E9%87%8F%E7%9A%84%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97.md)
-+ [动态线程池的扩展点以及插件体系.md](doc/%E5%8A%A8%E6%80%81%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%89%A9%E5%B1%95%E7%82%B9%E4%BB%A5%E5%8F%8A%E6%8F%92%E4%BB%B6%E4%BD%93%E7%B3%BB.md)
-+ [提供默认插件注册功能.md](doc/%E6%8F%90%E4%BE%9B%E9%BB%98%E8%AE%A4%E6%8F%92%E4%BB%B6%E6%B3%A8%E5%86%8C%E5%8A%9F%E8%83%BD.md)
-+ [使用 Builder 模式构建动态线程池.md](doc/%E4%BD%BF%E7%94%A8%20Builder%20%E6%A8%A1%E5%BC%8F%E6%9E%84%E5%BB%BA%E5%8A%A8%E6%80%81%E7%BA%BF%E7%A8%8B%E6%B1%A0.md)
-+ [线程池配置信息是如何注册到服务端的?.md](doc/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF%E6%98%AF%E5%A6%82%E4%BD%95%E6%B3%A8%E5%86%8C%E5%88%B0%E6%9C%8D%E5%8A%A1%E7%AB%AF%E7%9A%84%3F.md)
-+ [适配 TTL 和 Spring ThreadPoolTaskExecutor.md](doc/%E9%80%82%E9%85%8D%20TTL%20%E5%92%8C%20Spring%20ThreadPoolTaskExecutor.md)
-+ 支持第三方线程池（transmittable-thread-local、Spring ThreadPoolTaskExecutor……）
-+ 客户端上报动态线程池配置信息到服务端
-+ 客户端收集并上报动态线程池运行时信息到服务端
-+ 客户端根据服务端通知，动态刷新本地线程池配置
-+ 服务发现
-+ 续约
-+ 故障移除
-+ 告警机制
-+ 长轮询，实现线程池配置信息的动态变更
-+ ……
+
 
 ### 线程池相关
 + [为什么Java要设计一个线程池？](https://github.com/PansonPanson/moirai/blob/main/doc/001_Java%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%AE%BE%E8%AE%A1%E7%BA%BF%E7%A8%8B%E6%B1%A0%EF%BC%9F.md)
