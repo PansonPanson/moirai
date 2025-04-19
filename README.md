@@ -14,10 +14,10 @@ Moirai 是一个参考 Hippo4j 写的动态线程池框架，核心逻辑与 Hip
 + [适配 TTL 和 Spring ThreadPoolTaskExecutor.md](doc/%E9%80%82%E9%85%8D%20TTL%20%E5%92%8C%20Spring%20ThreadPoolTaskExecutor.md)
 + [实现客户端与服务端之间的服务发现.md](doc/%E5%AE%9E%E7%8E%B0%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%B9%8B%E9%97%B4%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0.md)
 + [实现客户端与服务端之间的心跳检测（续约）.md](doc/%E5%AE%9E%E7%8E%B0%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%B9%8B%E9%97%B4%E7%9A%84%E5%BF%83%E8%B7%B3%E6%A3%80%E6%B5%8B%EF%BC%88%E7%BB%AD%E7%BA%A6%EF%BC%89.md)
++ [实现过期服务移除功能.md](doc/%E5%AE%9E%E7%8E%B0%E8%BF%87%E6%9C%9F%E6%9C%8D%E5%8A%A1%E7%A7%BB%E9%99%A4%E5%8A%9F%E8%83%BD.md)
 + 客户端收集并上报动态线程池运行时信息到服务端
 + 客户端根据服务端通知，动态刷新本地线程池配置
 + 续约
-+ 故障移除
 + 告警机制
 + 长轮询，实现线程池配置信息的动态变更
 + ……
